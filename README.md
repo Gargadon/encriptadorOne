@@ -13,3 +13,7 @@ El objetivo es bastante simple, este encriptador y desencriptador de cadenas de 
 Todo esto es realizado en JavaScript.
 
 También se hace una página responsive que muestra el funcionamiento de este script en un formato amigable para el usuario.
+
+## Despliegue
+
+[Encriptador de texto](https://encripta-gargadon.netlify.app/)
