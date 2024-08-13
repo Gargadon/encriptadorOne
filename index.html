@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Texto</title>
+    <script src="encriptar.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="./images/Logo.png" alt="Alura Conversor">
+        </div>
+    </header>
+    <div class="cuerpo">
+        <div class="contenido">
+            <form id="encriptador">
+                <textarea id="texto" placeholder="Ingrese el texto aquí" class="texto"></textarea>
+                <div class="aviso">Solo letras minúsculas y sin acentos.</div>
+                <div class="botones">
+                    <button type="submit" onclick="encriptaTexto(event)" class="botonEncriptar">Encriptar</button>
+                    <button type="button" onclick="desencriptaTexto(event)"
+                        class="botonDesencriptar">Desencriptar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="recuadroResultado">
+            <div id="resultado">
+                <img src="./images/muneco.png" alt="Muñeco">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p class="ingresaTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button id="botonCopiar" class="botonCopiar" style="display:none;" onclick="copiar()">Copiar</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            
+        </div>
+    </footer>
+</body>
+
+</html>

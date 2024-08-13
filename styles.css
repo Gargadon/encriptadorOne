@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #F3F5FC;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2%;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+
+body {
+    scrollbar-width: none;
+}
+
+header {
+    display: block;
+    height: 6vh;
+    margin-bottom: 10px;
+}
+
+.cuerpo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    flex-direction: row;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+}
+
+textarea,
+textarea:active {
+    position: relative;
+    font-family: inherit;
+    width: 100%;
+    height: calc(90vh - 150px);
+    resize: none;
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botonEncriptar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: inherit;
+}
+
+.aviso {
+    height: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botonDesencriptar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    font-family: inherit;
+}
+
+.botonCopiar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 150px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: inherit;
+}
+
+.botonEncriptar:hover, .botonCopiar:hover {
+    box-shadow: 0 0 10px rgba(10, 56, 113, 0.5);
+}
+
+.botonDesencriptar:hover {
+    box-shadow: 0 0 10px rgba(216, 223, 232, 0.7);
+}
+
+.recuadroResultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 640px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .cuerpo {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+    .recuadroResultado {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+
+h2 {
+    width: 336px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+p.ingresaTexto {
+    width: 336px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+#resultado {
+    margin: auto;
+}
