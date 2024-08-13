@@ -1,5 +1,5 @@
 function encripta(texto) {
-  if (/[^a-z\s]/.test(texto)) {
+  if ((/[^a-z\s]/.test(texto)) || (texto == '')) {
     alertaError();
   }
 
@@ -16,7 +16,7 @@ function encripta(texto) {
 }
 
 function desencripta(texto) {
-  if (/[^a-z\s]/.test(texto)) {
+  if ((/[^a-z\s]/.test(texto)) || (texto == '')) {
     alertaError();
   }
 
@@ -53,7 +53,9 @@ function desencriptaTexto(event) {
 }
 
 function alertaError() {
-  alert("El texto tiene caracteres no permitidos.");
+  alert("El texto tiene caracteres no permitidos.\n" +
+    "Únicamente se pueden introducir letras minúsculas.\n" +
+    "No se permiten letras acentuadas, maýusculas, números u otros caracteres.");
   die();
 }
 
