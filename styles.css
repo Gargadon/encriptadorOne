@@ -43,7 +43,7 @@ header {
     height: 12vh;
     margin-bottom: 10px;
     background: linear-gradient(to top, #F3F5FC, #364784);
-    overflow: hidden; /* Solución 2 */
+    overflow: hidden;
 }
 
 footer {
